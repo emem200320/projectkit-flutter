@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 'Intern Kit',
                 style: TextStyle(
-                  fontFamily: 'InterTight',
+                  fontFamily: 'JockeyOne',
                   fontSize:32,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF5B7C8D),
@@ -47,7 +47,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Text(
                 'Supp Bro!',
                 style: TextStyle(
-                  fontFamily: 'InterTight',
+                  fontFamily: 'JockeyOne',
                   letterSpacing: 0.1,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                     'Login',
                     style: TextStyle(
-                      fontFamily: 'InterTight',
+                      fontFamily: 'JockeyOne',
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 0.01,
@@ -99,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Text(
                     'Sign Up',
                     style: TextStyle(
-                      fontFamily: 'InterTight',
+                      fontFamily: 'JockeyOne',
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 0.01,
