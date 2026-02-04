@@ -66,7 +66,7 @@ class SignupPage extends StatelessWidget {
               const SizedBox(height: 20),
               
               // Phone No
-              _buildLabel('Phone No'),
+              _buildLabel('Phone No.'),
               const SizedBox(height: 5),
               _buildTextField(),
               

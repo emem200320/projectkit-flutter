@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projectkit/pages/login_input_page.dart';
+import 'package:projectkit/pages/signup_screen.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -23,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
                 'Intern Kit',
                 style: TextStyle(
                   fontFamily: 'JockeyOne',
-                  fontSize:32,
+                  fontSize: 32,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF5B7C8D),
                 ),
@@ -31,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 35),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.symmetric(horizontal:40, vertical: 50),
+                padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
                 decoration: BoxDecoration(
                   color: Color(0xFFE8EAF0),
                   borderRadius: BorderRadius.circular(40),
@@ -45,31 +47,40 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 32),
               Center(
                 child: Text(
-                'Supp Bro!',
-                style: TextStyle(
-                  fontFamily: 'JockeyOne',
-                  letterSpacing: 0.1,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF5A7C8C),
-                  decorationColor: Color(0xFF5A7C8C),
-                  decorationThickness: 2,
-                  )
+                  'Supp Bro!',
+                  style: TextStyle(
+                    fontFamily: 'JockeyOne',
+                    letterSpacing: 0.1,
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF5A7C8C),
+                    decorationColor: Color(0xFF5A7C8C),
+                    decorationThickness: 2,
+                  ),
                 ),
               ),
               Spacer(),
-                            SizedBox(
+              SizedBox(
                 width: double.infinity,
                 height: 56,
                 child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginInput(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF6B8FA3),
                     foregroundColor: Colors.white,
                     elevation: 0,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(28),
                     ),
-                    child: Text(
+                  ),
+                  child: Text(
                     'Login',
                     style: TextStyle(
                       fontFamily: 'JockeyOne',
@@ -86,7 +97,12 @@ class _LoginPageState extends State<LoginPage> {
                 height: 56,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Sign up action
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignupPage(),
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFF6B8FA3),
@@ -109,19 +125,18 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 50),
               Center(
-                child:
-                  Text(
-                'Or Via social media',
-                style: TextStyle(
-                fontSize: 14,
-                color: Color(0xFF8B9DAA),
-                fontWeight: FontWeight.w500,
+                child: Text(
+                  'Or Via social media',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF8B9DAA),
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
               ),
               SizedBox(height: 35),
               Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // Facebook
                   Container(
@@ -146,7 +161,11 @@ class _LoginPageState extends State<LoginPage> {
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.g_mobiledata, color: Colors.white, size: 24),
+                      icon: Icon(
+                        Icons.g_mobiledata,
+                        color: Colors.white,
+                        size: 24,
+                      ),
                       onPressed: () {},
                     ),
                   ),
@@ -165,8 +184,8 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ],
-              ),         
-            ],          
+              ),
+            ],
           ),
         ),
       ),

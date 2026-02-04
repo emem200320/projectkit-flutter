@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projectkit/pages/signup_screen.dart';
-
-
-
+import 'pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +11,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
-    home:SignupPage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginPage());
   }
 }
