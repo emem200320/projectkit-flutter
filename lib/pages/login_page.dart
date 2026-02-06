@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 24),
+              SizedBox(height: 20),
               Text(
                 'Intern Kit',
                 style: TextStyle(
@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
                   color: Color(0xFF5B7C8D),
                 ),
               ),
-              SizedBox(height: 35),
+              SizedBox(height: 20),
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 180,
                 ),
               ),
-              SizedBox(height: 32),
+              SizedBox(height: 20),
               Center(
                 child: Text(
                   'Supp Bro!',
@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 30),
               Center(
                 child: Text(
                   'Or Via social media',
@@ -134,28 +134,30 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 35),
+              SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // Facebook
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 30,
+                    height: 30,
                     decoration: BoxDecoration(
                       color: Color(0xFF6B8FA3),
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.facebook, color: Colors.white, size: 24),
+                      icon: Icon(Icons.facebook, 
+                      color: Colors.white, 
+                      size: 15),
                       onPressed: () {},
                     ),
                   ),
-                  SizedBox(width: 16),
+                  SizedBox(width: 13),
                   // Google
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 30,
+                    height: 30,
                     decoration: BoxDecoration(
                       color: Color(0xFF6B8FA3),
                       shape: BoxShape.circle,
@@ -164,27 +166,32 @@ class _LoginPageState extends State<LoginPage> {
                       icon: Icon(
                         Icons.g_mobiledata,
                         color: Colors.white,
-                        size: 24,
+                        size: 15,
                       ),
                       onPressed: () {},
                     ),
                   ),
-                  SizedBox(width: 16),
+                  SizedBox(width: 13),
                   // LinkedIn
                   Container(
-                    width: 40,
-                    height: 40,
+                    width: 30,
+                    height: 30,
                     decoration: BoxDecoration(
                       color: Color(0xFF6B8FA3),
                       shape: BoxShape.circle,
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.business, color: Colors.white, size: 24),
+                      icon: Icon(Icons.business, color: 
+                      Colors.white, 
+                      size: 15),
                       onPressed: () {},
                     ),
+                    
                   ),
+
                 ],
               ),
+               SizedBox(height:20)
             ],
           ),
         ),
